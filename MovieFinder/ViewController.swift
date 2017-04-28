@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var searchTextField: UITextField!
+    
+    @IBAction func search() {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
