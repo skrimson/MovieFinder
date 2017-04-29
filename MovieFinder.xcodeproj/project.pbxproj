@@ -21,6 +21,14 @@
 		C48C8A621EAF646700507CED /* iphone-151573_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A611EAF646700507CED /* iphone-151573_960_720.png */; };
 		C48C8A661EB0621300507CED /* mad_max_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A651EB0621300507CED /* mad_max_w.jpg */; };
 		C48C8A681EB0621B00507CED /* mad_max_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A671EB0621B00507CED /* mad_max_p.jpg */; };
+		C48C8A6A1EB4629000507CED /* snatch_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A691EB4629000507CED /* snatch_w.jpg */; };
+		C48C8A6C1EB4629500507CED /* snatch_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A6B1EB4629500507CED /* snatch_p.jpg */; };
+		C48C8A6E1EB46E9A00507CED /* harry_potter_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A6D1EB46E9A00507CED /* harry_potter_p.jpg */; };
+		C48C8A701EB46EA900507CED /* harry_potter_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A6F1EB46EA900507CED /* harry_potter_w.jpg */; };
+		C48C8A721EB46EB900507CED /* star_wars_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A711EB46EB900507CED /* star_wars_p.jpg */; };
+		C48C8A741EB46ED400507CED /* star_wars_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A731EB46ED400507CED /* star_wars_w.jpg */; };
+		C48C8A761EB46FB800507CED /* leon_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A751EB46FB800507CED /* leon_w.jpg */; };
+		C48C8A781EB46FC300507CED /* leon_p.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A771EB46FC300507CED /* leon_p.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,14 @@
 		C48C8A611EAF646700507CED /* iphone-151573_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-151573_960_720.png"; sourceTree = "<group>"; };
 		C48C8A651EB0621300507CED /* mad_max_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mad_max_w.jpg; sourceTree = "<group>"; };
 		C48C8A671EB0621B00507CED /* mad_max_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mad_max_p.jpg; sourceTree = "<group>"; };
+		C48C8A691EB4629000507CED /* snatch_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snatch_w.jpg; sourceTree = "<group>"; };
+		C48C8A6B1EB4629500507CED /* snatch_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snatch_p.jpg; sourceTree = "<group>"; };
+		C48C8A6D1EB46E9A00507CED /* harry_potter_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harry_potter_p.jpg; sourceTree = "<group>"; };
+		C48C8A6F1EB46EA900507CED /* harry_potter_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harry_potter_w.jpg; sourceTree = "<group>"; };
+		C48C8A711EB46EB900507CED /* star_wars_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star_wars_p.jpg; sourceTree = "<group>"; };
+		C48C8A731EB46ED400507CED /* star_wars_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star_wars_w.jpg; sourceTree = "<group>"; };
+		C48C8A751EB46FB800507CED /* leon_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leon_w.jpg; sourceTree = "<group>"; };
+		C48C8A771EB46FC300507CED /* leon_p.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leon_p.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +165,10 @@
 		C48C8A631EB061DA00507CED /* posters */ = {
 			isa = PBXGroup;
 			children = (
+				C48C8A711EB46EB900507CED /* star_wars_p.jpg */,
+				C48C8A771EB46FC300507CED /* leon_p.jpeg */,
+				C48C8A6D1EB46E9A00507CED /* harry_potter_p.jpg */,
+				C48C8A6B1EB4629500507CED /* snatch_p.jpg */,
 				C48C8A671EB0621B00507CED /* mad_max_p.jpg */,
 			);
 			name = posters;
@@ -157,6 +177,10 @@
 		C48C8A641EB061E800507CED /* wallpapers */ = {
 			isa = PBXGroup;
 			children = (
+				C48C8A751EB46FB800507CED /* leon_w.jpg */,
+				C48C8A6F1EB46EA900507CED /* harry_potter_w.jpg */,
+				C48C8A731EB46ED400507CED /* star_wars_w.jpg */,
+				C48C8A691EB4629000507CED /* snatch_w.jpg */,
 				C48C8A651EB0621300507CED /* mad_max_w.jpg */,
 			);
 			name = wallpapers;
@@ -272,13 +296,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48C8A781EB46FC300507CED /* leon_p.jpeg in Resources */,
 				C48C8A681EB0621B00507CED /* mad_max_p.jpg in Resources */,
+				C48C8A761EB46FB800507CED /* leon_w.jpg in Resources */,
+				C48C8A721EB46EB900507CED /* star_wars_p.jpg in Resources */,
 				C48C8A321EAB4D0700507CED /* LaunchScreen.storyboard in Resources */,
+				C48C8A6C1EB4629500507CED /* snatch_p.jpg in Resources */,
 				C48C8A621EAF646700507CED /* iphone-151573_960_720.png in Resources */,
+				C48C8A6A1EB4629000507CED /* snatch_w.jpg in Resources */,
+				C48C8A741EB46ED400507CED /* star_wars_w.jpg in Resources */,
 				C48C8A661EB0621300507CED /* mad_max_w.jpg in Resources */,
 				C48C8A601EAF61A500507CED /* ListTableViewCell.xib in Resources */,
+				C48C8A701EB46EA900507CED /* harry_potter_w.jpg in Resources */,
 				C48C8A2F1EAB4D0700507CED /* Assets.xcassets in Resources */,
 				C48C8A2D1EAB4D0700507CED /* Main.storyboard in Resources */,
+				C48C8A6E1EB46E9A00507CED /* harry_potter_p.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

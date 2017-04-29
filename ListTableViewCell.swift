@@ -10,7 +10,11 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
     
+    var key: [String] = []
+    
     @IBOutlet var commentLabelText: UILabel!
+    @IBOutlet var poster: UIButton!
+    @IBOutlet var title: UIButton!
     
     @IBAction func pushTitleButton() {
         

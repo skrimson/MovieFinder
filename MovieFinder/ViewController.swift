@@ -12,10 +12,14 @@ class ViewController: UIViewController {
     
     @IBOutlet var searchTextField: UITextField!
     
-    @IBAction func search() {
-        
+    //テキストを次の画面に送る
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "listTableView" {
+            let listTableViewController: ListTableViewController = segue.destination as! ListTableViewController
+            listTableViewController.sendText = self.searchTextField.text!
+        }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

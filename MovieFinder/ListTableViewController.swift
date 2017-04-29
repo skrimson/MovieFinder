@@ -9,15 +9,30 @@
 import UIKit
 
 class ListTableViewController: UITableViewController {
-
+    
+    class Movies {
+        var names: [String] = ["Mad Max: Fury Road","Leon The Proffesional","Snatch","Star Wars"]
+        var posters: [UIImage]! = [UIImage(named: "mad_max_p.jpg")!,UIImage(named: "leon_p.jpeg")!, UIImage(named: "snatch_p.jpg")!, UIImage(named: "star_wars_p.jpg")!]
+        var walls: [UIImage]! = [UIImage(named: "mad_max_w.jpg")!, UIImage(named: "leon_w.jpg")!, UIImage(named: "snatch_w.jpg")!, UIImage(named: "star_wars_w.jpg")!]
+    }
+    
+    var search = Movies()
+    
+    var sendText: String = ""
+    var names: [String] = ["Mad Max: Fury Road","Leon The Proffesional","Snatch","Star Wars"]
+    var posters: [UIImage]! = [UIImage(named: "mad_max_p.jpg")!,UIImage(named: "leon_p.jpeg")!, UIImage(named: "snatch_p.jpg")!, UIImage(named: "star_wars_p.jpg")!]
+    var walls: [UIImage]! = [UIImage(named: "mad_max_w.jpg")!, UIImage(named: "leon_w.jpg")!, UIImage(named: "snatch_w.jpg")!, UIImage(named: "star_wars_w.jpg")!]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +44,28 @@ class ListTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 4
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
+        
+        cell.poster.setBackgroundImage(search.posters[indexPath.row], for: UIControlState.normal)
+        cell.title.setTitle(search.names[indexPath.row], for: UIControlState.normal)
         // Configure the cell...
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
+    }
 
     /*
     // Override to support conditional editing of the table view.
