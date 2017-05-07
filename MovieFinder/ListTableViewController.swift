@@ -10,21 +10,33 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
     
+    var sendText: String = ""
+    
     class Movies {
-        var names: [String] = ["Mad Max: Fury Road","Leon The Proffesional","Snatch","Star Wars"]
-        var posters: [UIImage]! = [UIImage(named: "mad_max_p.jpg")!,UIImage(named: "leon_p.jpeg")!, UIImage(named: "snatch_p.jpg")!, UIImage(named: "star_wars_p.jpg")!]
-        var walls: [UIImage]! = [UIImage(named: "mad_max_w.jpg")!, UIImage(named: "leon_w.jpg")!, UIImage(named: "snatch_w.jpg")!, UIImage(named: "star_wars_w.jpg")!]
+        var name: String
+        var poster: UIImage!
+        var wall: UIImage!
+        var key: [String] = []
+        
+        init(name: String, poster: UIImage!, wall: UIImage!, key: [String]){
+            self.name = name
+            self.poster = poster
+            self.wall = wall
+            self.key = key
+        }
     }
     
-    var search = Movies()
+    var madmax = Movies(name: "Mad Max: Fury Road", poster: UIImage(named: "mad_max_p.jpg")!, wall: UIImage(named: "mad_max_w.jpg")!, key: ["怒", "キレ"])
     
-    var sendText: String = ""
-    var names: [String] = ["Mad Max: Fury Road","Leon The Proffesional","Snatch","Star Wars"]
-    var posters: [UIImage]! = [UIImage(named: "mad_max_p.jpg")!,UIImage(named: "leon_p.jpeg")!, UIImage(named: "snatch_p.jpg")!, UIImage(named: "star_wars_p.jpg")!]
-    var walls: [UIImage]! = [UIImage(named: "mad_max_w.jpg")!, UIImage(named: "leon_w.jpg")!, UIImage(named: "snatch_w.jpg")!, UIImage(named: "star_wars_w.jpg")!]
+    var snatch = Movies(name: "Snatch", poster: UIImage(named: "snatch_p.jpg")!, wall: UIImage(named: "snatch_w.jpg")!, key: ["おしゃれ"])
+    
+    var dataList: [Movies] = []
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataList = [madmax, snatch]
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
