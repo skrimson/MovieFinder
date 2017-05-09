@@ -16,27 +16,35 @@ class ListTableViewController: UITableViewController {
         var name: String
         var poster: UIImage!
         var wall: UIImage!
-        var key: [String] = []
+        var keys: [String] = []
         
-        init(name: String, poster: UIImage!, wall: UIImage!, key: [String]){
+        init(name: String, poster: UIImage!, wall: UIImage!, keys: [String]){
             self.name = name
             self.poster = poster
             self.wall = wall
-            self.key = key
+            self.keys = keys
         }
     }
     
-    var madmax = Movies(name: "Mad Max: Fury Road", poster: UIImage(named: "mad_max_p.jpg")!, wall: UIImage(named: "mad_max_w.jpg")!, key: ["怒", "キレ"])
+    var madmax = Movies(name: "Mad Max: Fury Road", poster: UIImage(named: "mad_max_p.jpg")!, wall: UIImage(named: "mad_max_w.jpg")!, keys: ["怒", "キレ"])
     
-    var snatch = Movies(name: "Snatch", poster: UIImage(named: "snatch_p.jpg")!, wall: UIImage(named: "snatch_w.jpg")!, key: ["おしゃれ"])
+    var snatch = Movies(name: "Snatch", poster: UIImage(named: "snatch_p.jpg")!, wall: UIImage(named: "snatch_w.jpg")!, keys: ["おしゃれ"])
     
     var dataList: [Movies] = []
-    
-    
+    var search: [Movies] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dataList = [madmax, snatch]
+        
+        for data in dataList {
+            for key in data.keys {
+                if sendText.contains(key){
+                    search.append(data)
+                    break
+                }
+            }
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -61,15 +69,15 @@ class ListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return search.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
         
-        cell.poster.setBackgroundImage(search.posters[indexPath.row], for: UIControlState.normal)
-        cell.title.setTitle(search.names[indexPath.row], for: UIControlState.normal)
+        cell.poster.setBackgroundImage(search[indexPath.row].poster, for: UIControlState.normal)
+        cell.title.setTitle(search[indexPath.row].name, for: UIControlState.normal)
         // Configure the cell...
 
         return cell
