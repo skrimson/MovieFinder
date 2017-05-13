@@ -17,25 +17,39 @@ class ListTableViewController: UITableViewController {
         var poster: UIImage!
         var wall: UIImage!
         var keys: [String] = []
+        var comment: String
+        var amazon: String
         
-        init(name: String, poster: UIImage!, wall: UIImage!, keys: [String]){
+        init(name: String, poster: UIImage!, wall: UIImage!, keys: [String], comment: String, amazon: String){
             self.name = name
             self.poster = poster
             self.wall = wall
             self.keys = keys
+            self.comment = comment
+            self.amazon = amazon
         }
     }
     
-    var madmax = Movies(name: "Mad Max: Fury Road", poster: UIImage(named: "mad_max_p.jpg")!, wall: UIImage(named: "mad_max_w.jpg")!, keys: ["怒", "キレ"])
+    var madmax = Movies(name: "マッドマックス： 怒りのデスロード", poster: UIImage(named: "mad_max_p.jpg")!, wall: UIImage(named: "mad_max_w.jpg")!, keys: ["怒", "キレ", "ハッチャケ", "はっちゃけ", "ストレス"], comment: "”荒野でクレイジーなひと旅を”", amazon: "http://amzn.asia/ja0SqGr")
     
-    var snatch = Movies(name: "Snatch", poster: UIImage(named: "snatch_p.jpg")!, wall: UIImage(named: "snatch_w.jpg")!, keys: ["おしゃれ"])
+    var snatch = Movies(name: "スナッチ", poster: UIImage(named: "snatch_p.jpg")!, wall: UIImage(named: "snatch_w.jpg")!, keys: [""], comment: "”最後にダイヤモンドを手に入れるのは”", amazon: "http://amzn.asia/7Anj4NN")
+    
+    var leon = Movies(name: "レオン", poster: UIImage(named: "leon_p.jpeg")!, wall: UIImage(named: "leon_w.jpg")!, keys: ["泣きたい", "暇"], comment: "”MA-1、チョーカーブームはここから？”", amazon: "http://amzn.asia/90zo5Pa")
+    
+    var django = Movies(name: "ジャンゴ　繋がれざる者", poster: UIImage(named: "django_p.jpg")!, wall: UIImage(named: "django_w.jpg")!, keys: ["キレ", "ハッチャケ", "はっちゃけ"], comment: "”西部でひと暴れしよう”", amazon: "http://amzn.asia/eQPMgbg")
+    
+    var who = Movies(name: "ピエロがお前を嘲笑う", poster: UIImage(named: "who_p.jpg")!, wall: UIImage(named: "who_w.jpg")!, keys: ["開発", "プログラミング", "勉強", "IT"], comment: "”マインドもハッキングされる奇作”", amazon: "http://amzn.asia/3jwDRSD")
+    
+    var kingsman = Movies(name: "キングスマン", poster: UIImage(named: "kingsman_p.jpg")!, wall: UIImage(named: "kingsman_w.jpg")!, keys: ["ハッチャケ", "はっちゃけ", "暴"], comment: "”007クレイジー版”", amazon:"http://amzn.asia/6yPQ93u")
+    
     
     var dataList: [Movies] = []
     var search: [Movies] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataList = [madmax, snatch]
+        
+        dataList = [madmax, snatch, leon, django, who, kingsman]
         
         for data in dataList {
             for key in data.keys {
@@ -44,6 +58,7 @@ class ListTableViewController: UITableViewController {
                     break
                 }
             }
+            
         }
         
         // Uncomment the following line to preserve selection between presentations
@@ -78,13 +93,17 @@ class ListTableViewController: UITableViewController {
         
         cell.poster.setBackgroundImage(search[indexPath.row].poster, for: UIControlState.normal)
         cell.title.setTitle(search[indexPath.row].name, for: UIControlState.normal)
+        cell.amazon = search[indexPath.row].amazon
+        cell.wall.image = search[indexPath.row].wall
+        cell.comment.text = search[indexPath.row].comment
+        
         // Configure the cell...
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 280
     }
 
     /*

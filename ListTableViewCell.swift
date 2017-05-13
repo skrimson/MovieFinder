@@ -10,14 +10,17 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
     
-    var key: [String] = []
-    
-    @IBOutlet var commentLabelText: UILabel!
+    @IBOutlet var comment: UILabel!
     @IBOutlet var poster: UIButton!
     @IBOutlet var title: UIButton!
+    @IBOutlet var wall: UIImageView!
+    var amazon: String!
     
     @IBAction func pushTitleButton() {
-        
+        let url = URL(string:amazon)
+        if( UIApplication.shared.canOpenURL(url!) ) {
+            UIApplication.shared.open(url!)
+        }
     }
     
     @IBAction func pushPoster() {
