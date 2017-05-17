@@ -10,6 +10,7 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
     
+    
     var sendText: String = ""
     
     class Movies {
@@ -32,16 +33,33 @@ class ListTableViewController: UITableViewController {
     
     var madmax = Movies(name: "マッドマックス： 怒りのデスロード", poster: UIImage(named: "mad_max_p.jpg")!, wall: UIImage(named: "mad_max_w.jpg")!, keys: ["怒", "キレ", "ハッチャケ", "はっちゃけ", "ストレス"], comment: "”荒野でクレイジーなひと旅を”", amazon: "http://amzn.asia/ja0SqGr")
     
-    var snatch = Movies(name: "スナッチ", poster: UIImage(named: "snatch_p.jpg")!, wall: UIImage(named: "snatch_w.jpg")!, keys: [""], comment: "”最後にダイヤモンドを手に入れるのは”", amazon: "http://amzn.asia/7Anj4NN")
+    var snatch = Movies(name: "スナッチ", poster: UIImage(named: "snatch_p.jpg")!, wall: UIImage(named: "snatch_w.jpg")!, keys: ["頭"], comment: "”最後にダイヤモンドを手に入れるのは”", amazon: "http://amzn.asia/7Anj4NN")
     
-    var leon = Movies(name: "レオン", poster: UIImage(named: "leon_p.jpeg")!, wall: UIImage(named: "leon_w.jpg")!, keys: ["泣きたい", "暇"], comment: "”MA-1、チョーカーブームはここから？”", amazon: "http://amzn.asia/90zo5Pa")
+    var leon = Movies(name: "レオン", poster: UIImage(named: "leon_p.jpeg")!, wall: UIImage(named: "leon_w.jpg")!, keys: ["泣きたい", "暇", "おしゃれ"], comment: "”MA-1、チョーカーブームはここから？”", amazon: "http://amzn.asia/90zo5Pa")
     
     var django = Movies(name: "ジャンゴ　繋がれざる者", poster: UIImage(named: "django_p.jpg")!, wall: UIImage(named: "django_w.jpg")!, keys: ["キレ", "ハッチャケ", "はっちゃけ"], comment: "”西部でひと暴れしよう”", amazon: "http://amzn.asia/eQPMgbg")
     
-    var who = Movies(name: "ピエロがお前を嘲笑う", poster: UIImage(named: "who_p.jpg")!, wall: UIImage(named: "who_w.jpg")!, keys: ["開発", "プログラミング", "勉強", "IT"], comment: "”マインドもハッキングされる奇作”", amazon: "http://amzn.asia/3jwDRSD")
+    var who = Movies(name: "ピエロがお前を嘲笑う", poster: UIImage(named: "who_p.jpg")!, wall: UIImage(named: "who_w.jpg")!, keys: ["開発", "プログラミング", "勉強", "IT", "頭"], comment: "”マインドもハッキングされる奇作”", amazon: "http://amzn.asia/3jwDRSD")
     
     var kingsman = Movies(name: "キングスマン", poster: UIImage(named: "kingsman_p.jpg")!, wall: UIImage(named: "kingsman_w.jpg")!, keys: ["ハッチャケ", "はっちゃけ", "暴"], comment: "”007クレイジー版”", amazon:"http://amzn.asia/6yPQ93u")
     
+    var socialnetwork = Movies(name: "ソーシャルネットワーク", poster: UIImage(named: "social_p.jpg")!, wall: UIImage(named: "social_w.jpg")!, keys: ["開発", "プログラミング", "勉強", "IT", "頭"], comment: "”ITやるならとりあえすこれ”", amazon: "http://amzn.asia/10FzzxM")
+    
+    var johnwick = Movies(name: "ジョンウィック", poster: UIImage(named: "johnwick_p.jpg")!, wall: UIImage(named: "johnwick_w.jpg")!, keys: ["何も", "暇"], comment: "”現実的すぎるのにカッコいいアクション”", amazon: "http://amzn.asia/6PBeCdM")
+    
+    var drive = Movies(name: "ドライヴ", poster: UIImage(named: "drive_p.jpg")!, wall: UIImage(named: "drive_w.jpg")!, keys: ["憂鬱", "何も", "暇"], comment: "”メランコリックながらも魅かれる”", amazon: "http://amzn.asia/bYseSxV")
+    
+    var million = Movies(name: "ミリオンダラーベイビー", poster: UIImage(named: "million_p.jpg")!, wall: UIImage(named: "million_w.jpg")!, keys: ["泣きたい", "何も", "涙"], comment: "”ボクシング映画と思いきや涙”", amazon: "http://amzn.asia/345XnvH")
+    
+    var click = Movies(name: "もしも昨日が選べたら", poster: UIImage(named: "click_p.jpg")!, wall: UIImage(named: "click_w.jpg")!, keys: ["笑", "泣きたい", "何も", "涙"], comment: "”笑って泣きたいならばこれを”", amazon: "http://amzn.asia/4KwOOgO")
+    
+    var greenmile = Movies(name: "グリーンマイル", poster: UIImage(named: "greenmile_p.jpg")!, wall: UIImage(named: "greenmile_w.jpg")!, keys: ["泣きたい", "何も", "涙"], comment: "”開発主が初めて号泣した作品”", amazon: "http://amzn.asia/aSGAQND")
+    
+    var identity = Movies(name: "アイデンティティー", poster: UIImage(named: "identity_p.jpeg")!, wall: UIImage(named: "identity_w.jpg")!, keys: ["刺激", "頭", "雨"], comment: "”究極の犯人は誰だ系映画”", amazon: "http://amzn.asia/1PVk3IU")
+    
+    var grand = Movies(name: "グランドブダペストホテル", poster: UIImage(named: "grand_p.jpg")!, wall: UIImage(named: "grand_w.jpg")!, keys: ["美術館", "おしゃれ"], comment: "”美術作品”", amazon: "http://amzn.asia/8F9IVGL")
+    
+    var longest = Movies(name: "ロンゲストヤード", poster: UIImage(named: "longest_p.jpg")!, wall: UIImage(named: "longest_w.jpg")!, keys: ["笑", "運動", "スポーツ"], comment: "”刑務所で生まれる絆と笑い”", amazon: "http://amzn.asia/6XVAqW9")
     
     var dataList: [Movies] = []
     var search: [Movies] = []
@@ -49,7 +67,7 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataList = [madmax, snatch, leon, django, who, kingsman]
+        dataList = [madmax, snatch, leon, django, socialnetwork, who, kingsman, johnwick, drive, million, click, greenmile, identity, grand, longest]
         
         for data in dataList {
             for key in data.keys {
