@@ -114,6 +114,7 @@ class ListTableViewController: UITableViewController {
         cell.amazon = search[indexPath.row].amazon
         cell.wall.image = search[indexPath.row].wall
         cell.comment.text = search[indexPath.row].comment
+        cell.selectionStyle = .none
         
         // Configure the cell...
 
