@@ -40,8 +40,7 @@ class ListTableViewCell: UITableViewCell {
         movie.append(temp)
         let encodedData = NSKeyedArchiver.archivedData(withRootObject: movie)
         UserDefaults.standard.set(encodedData, forKey: "movie")
-        let alert = UIAlertController(title: "保存完了", message: "登録が完了しました", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
     }
 
     override func awakeFromNib() {

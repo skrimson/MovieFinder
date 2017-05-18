@@ -9,7 +9,9 @@
 import UIKit
 
 class MyTableViewController: UITableViewController {
-
+    
+    var my: [Movies] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,11 +21,8 @@ class MyTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         let data = UserDefaults.standard.data(forKey: "movie")
-        let my = NSKeyedUnarchiver.unarchiveObject(with: data!) as? [Movies]
-    }
-    
-    func deserialize(_ obj: Data) -> AnyObject {
-        return NSKeyedUnarchiver.unarchiveObject(with: obj)! as AnyObject
+        my = (NSKeyedUnarchiver.unarchiveObject(with: data!) as? [Movies])!
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +46,7 @@ class MyTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
         
         cell.poster.setBackgroundImage(my[indexPath.row].poster, for: UIControlState.normal)
-        cell.title.setTitle(my[indexPath.erow].name, for: UIControlState.normal)
+        cell.title.setTitle(my[indexPath.row].name, for: UIControlState.normal)
         cell.amazon = my[indexPath.row].amazon
         cell.wall.image = my[indexPath.row].wall
         cell.comment.text = my[indexPath.row].comment
@@ -57,7 +56,11 @@ class MyTableViewController: UITableViewController {
         
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 280
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
