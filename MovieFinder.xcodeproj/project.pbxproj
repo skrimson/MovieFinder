@@ -56,6 +56,14 @@
 		C48C8AB91ECC189E00507CED /* longest_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AB81ECC189E00507CED /* longest_p.jpg */; };
 		C48C8ABB1ECC18AD00507CED /* longest_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8ABA1ECC18AD00507CED /* longest_w.jpg */; };
 		C48C8ABD1ECC8B1D00507CED /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C48C8ABC1ECC8B1D00507CED /* icon.png */; };
+		C48C8ABF1ECD223C00507CED /* fightclub_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8ABE1ECD223C00507CED /* fightclub_p.jpg */; };
+		C48C8AC11ECD224A00507CED /* fightclub_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AC01ECD224A00507CED /* fightclub_w.jpg */; };
+		C48C8AC31ECD225900507CED /* deadpool_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AC21ECD225900507CED /* deadpool_p.jpg */; };
+		C48C8AC51ECD226500507CED /* deadpool_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AC41ECD226500507CED /* deadpool_w.jpg */; };
+		C48C8AC71ECD227100507CED /* wolfof_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AC61ECD227100507CED /* wolfof_p.jpg */; };
+		C48C8AC91ECD227D00507CED /* wolfof_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AC81ECD227D00507CED /* wolfof_w.jpg */; };
+		C48C8ACB1ECD228700507CED /* shawshank_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8ACA1ECD228700507CED /* shawshank_p.jpg */; };
+		C48C8ACD1ECD229300507CED /* shawshank_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8ACC1ECD229300507CED /* shawshank_w.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +139,14 @@
 		C48C8AB81ECC189E00507CED /* longest_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = longest_p.jpg; sourceTree = "<group>"; };
 		C48C8ABA1ECC18AD00507CED /* longest_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = longest_w.jpg; sourceTree = "<group>"; };
 		C48C8ABC1ECC8B1D00507CED /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		C48C8ABE1ECD223C00507CED /* fightclub_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fightclub_p.jpg; sourceTree = "<group>"; };
+		C48C8AC01ECD224A00507CED /* fightclub_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fightclub_w.jpg; sourceTree = "<group>"; };
+		C48C8AC21ECD225900507CED /* deadpool_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deadpool_p.jpg; sourceTree = "<group>"; };
+		C48C8AC41ECD226500507CED /* deadpool_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deadpool_w.jpg; sourceTree = "<group>"; };
+		C48C8AC61ECD227100507CED /* wolfof_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfof_p.jpg; sourceTree = "<group>"; };
+		C48C8AC81ECD227D00507CED /* wolfof_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfof_w.jpg; sourceTree = "<group>"; };
+		C48C8ACA1ECD228700507CED /* shawshank_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shawshank_p.jpg; sourceTree = "<group>"; };
+		C48C8ACC1ECD229300507CED /* shawshank_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shawshank_w.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,8 +237,12 @@
 		C48C8A631EB061DA00507CED /* posters */ = {
 			isa = PBXGroup;
 			children = (
+				C48C8AC61ECD227100507CED /* wolfof_p.jpg */,
+				C48C8ACA1ECD228700507CED /* shawshank_p.jpg */,
 				C48C8A8C1EC69B1600507CED /* social_p.jpg */,
 				C48C8A9A1ECB0F0C00507CED /* drive_p.jpg */,
+				C48C8ABE1ECD223C00507CED /* fightclub_p.jpg */,
+				C48C8AC21ECD225900507CED /* deadpool_p.jpg */,
 				C48C8AB21ECC186100507CED /* grand_p.jpg */,
 				C48C8AB81ECC189E00507CED /* longest_p.jpg */,
 				C48C8AAE1ECC184800507CED /* identity_p.jpeg */,
@@ -254,10 +274,14 @@
 				C48C8AAC1ECC183C00507CED /* greenmile_w.jpg */,
 				C48C8AB01ECC185500507CED /* identity_w.jpg */,
 				C48C8AB61ECC189400507CED /* grand_w.jpg */,
+				C48C8AC41ECD226500507CED /* deadpool_w.jpg */,
 				C48C8A8A1EC699DC00507CED /* who_w.jpg */,
+				C48C8ACC1ECD229300507CED /* shawshank_w.jpg */,
 				C48C8ABA1ECC18AD00507CED /* longest_w.jpg */,
 				C48C8A881EC46C7300507CED /* kingsman_w.jpg */,
+				C48C8AC01ECD224A00507CED /* fightclub_w.jpg */,
 				C48C8A8E1EC69B2100507CED /* social_w.jpg */,
+				C48C8AC81ECD227D00507CED /* wolfof_w.jpg */,
 				C48C8AA81ECC17EE00507CED /* click_w.jpg */,
 				C48C8A731EB46ED400507CED /* star_wars_w.jpg */,
 				C48C8A691EB4629000507CED /* snatch_w.jpg */,
@@ -385,23 +409,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48C8ACD1ECD229300507CED /* shawshank_w.jpg in Resources */,
 				C48C8A7F1EC46C3200507CED /* django_p.jpg in Resources */,
 				C48C8A781EB46FC300507CED /* leon_p.jpeg in Resources */,
 				C48C8A681EB0621B00507CED /* mad_max_p.jpg in Resources */,
 				C48C8AB11ECC185500507CED /* identity_w.jpg in Resources */,
 				C48C8A7D1EC2C34500507CED /* cinecaption227.TTF in Resources */,
+				C48C8ACB1ECD228700507CED /* shawshank_p.jpg in Resources */,
 				C48C8AA11ECB15DA00507CED /* johnwick_w.jpg in Resources */,
 				C48C8AAF1ECC184800507CED /* identity_p.jpeg in Resources */,
 				C48C8A761EB46FB800507CED /* leon_w.jpg in Resources */,
 				C48C8AA31ECC166300507CED /* million_w.jpg in Resources */,
 				C48C8A721EB46EB900507CED /* star_wars_p.jpg in Resources */,
+				C48C8AC11ECD224A00507CED /* fightclub_w.jpg in Resources */,
 				C48C8AB31ECC186100507CED /* grand_p.jpg in Resources */,
+				C48C8AC71ECD227100507CED /* wolfof_p.jpg in Resources */,
 				C48C8A8D1EC69B1600507CED /* social_p.jpg in Resources */,
 				C48C8AB71ECC189400507CED /* grand_w.jpg in Resources */,
 				C48C8A321EAB4D0700507CED /* LaunchScreen.storyboard in Resources */,
 				C48C8AB91ECC189E00507CED /* longest_p.jpg in Resources */,
 				C48C8AA91ECC17EE00507CED /* click_w.jpg in Resources */,
 				C48C8A6C1EB4629500507CED /* snatch_p.jpg in Resources */,
+				C48C8AC51ECD226500507CED /* deadpool_w.jpg in Resources */,
 				C48C8A621EAF646700507CED /* iphone-151573_960_720.png in Resources */,
 				C48C8A811EC46C4800507CED /* django_w.jpg in Resources */,
 				C48C8ABD1ECC8B1D00507CED /* icon.png in Resources */,
@@ -412,9 +441,12 @@
 				C48C8A8F1EC69B2100507CED /* social_w.jpg in Resources */,
 				C48C8A831EC46C5500507CED /* who_p.jpg in Resources */,
 				C48C8A9B1ECB0F0C00507CED /* drive_p.jpg in Resources */,
+				C48C8AC91ECD227D00507CED /* wolfof_w.jpg in Resources */,
 				C48C8AA51ECC167000507CED /* million_p.jpg in Resources */,
+				C48C8AC31ECD225900507CED /* deadpool_p.jpg in Resources */,
 				C48C8A741EB46ED400507CED /* star_wars_w.jpg in Resources */,
 				C48C8AA71ECC17D900507CED /* click_p.jpg in Resources */,
+				C48C8ABF1ECD223C00507CED /* fightclub_p.jpg in Resources */,
 				C48C8AAD1ECC183C00507CED /* greenmile_w.jpg in Resources */,
 				C48C8AAB1ECC182F00507CED /* greenmile_p.jpg in Resources */,
 				C48C8A661EB0621300507CED /* mad_max_w.jpg in Resources */,
