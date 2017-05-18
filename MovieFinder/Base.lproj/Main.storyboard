@@ -90,7 +90,7 @@
                                 <rect key="frame" x="0.0" y="133" width="375" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SaD-JY-Orb" id="ZAI-do-U6U">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -107,6 +107,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bv-eX-9Tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="948" y="138.98050974512745"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="0ue-Po-jLt">
+            <objects>
+                <tableViewController id="mop-Gu-kgc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="chr-62-wfr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.073324254140000003" green="0.067763747599999993" blue="0.069241488909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Ni-O9-bii">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                            <state key="normal" title="Saved for Later">
+                                <color key="titleColor" red="0.96748453379999999" green="0.73271709679999997" blue="0.38653483989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="fPf-Ox-Hm4"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CLU-3e-W7w">
+                                <rect key="frame" x="0.0" y="133" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CLU-3e-W7w" id="5IK-Kf-U3R">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mop-Gu-kgc" id="pkZ-rH-PVN"/>
+                            <outlet property="delegate" destination="mop-Gu-kgc" id="f1N-pq-9vx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mDN-JA-V3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="897.30134932533736"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="5kC-mp-dU8">
@@ -176,4 +215,7 @@
         <image name="mad_max_p.jpg" width="1024" height="1447"/>
         <image name="mad_max_w.jpg" width="1024" height="682"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fPf-Ox-Hm4"/>
+    </inferredMetricsTieBreakers>
 </document>

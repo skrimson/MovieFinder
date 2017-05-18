@@ -42,7 +42,6 @@ class ListTableViewCell: UITableViewCell {
         UserDefaults.standard.set(encodedData, forKey: "movie")
         let alert = UIAlertController(title: "保存完了", message: "登録が完了しました", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
     }
 
     override func awakeFromNib() {
