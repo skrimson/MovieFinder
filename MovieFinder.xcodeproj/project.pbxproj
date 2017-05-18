@@ -64,6 +64,7 @@
 		C48C8AC91ECD227D00507CED /* wolfof_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AC81ECD227D00507CED /* wolfof_w.jpg */; };
 		C48C8ACB1ECD228700507CED /* shawshank_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8ACA1ECD228700507CED /* shawshank_p.jpg */; };
 		C48C8ACD1ECD229300507CED /* shawshank_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8ACC1ECD229300507CED /* shawshank_w.jpg */; };
+		C48C8ACF1ECD83D500507CED /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C8ACE1ECD83D500507CED /* Movies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,7 @@
 		C48C8AC81ECD227D00507CED /* wolfof_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfof_w.jpg; sourceTree = "<group>"; };
 		C48C8ACA1ECD228700507CED /* shawshank_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shawshank_p.jpg; sourceTree = "<group>"; };
 		C48C8ACC1ECD229300507CED /* shawshank_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shawshank_w.jpg; sourceTree = "<group>"; };
+		C48C8ACE1ECD83D500507CED /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				C48C8ABC1ECC8B1D00507CED /* icon.png */,
 				C48C8A2B1EAB4D0700507CED /* Main.storyboard */,
 				C48C8A611EAF646700507CED /* iphone-151573_960_720.png */,
+				C48C8ACE1ECD83D500507CED /* Movies.swift */,
 				C48C8A5D1EAF61A500507CED /* ListTableViewCell.swift */,
 				C48C8A5E1EAF61A500507CED /* ListTableViewCell.xib */,
 				C48C8A2E1EAB4D0700507CED /* Assets.xcassets */,
@@ -484,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C48C8A581EAF57E100507CED /* ListTableViewController.swift in Sources */,
+				C48C8ACF1ECD83D500507CED /* Movies.swift in Sources */,
 				C48C8A2A1EAB4D0700507CED /* ViewController.swift in Sources */,
 				C48C8A281EAB4D0700507CED /* AppDelegate.swift in Sources */,
 				C48C8A5A1EAF57F700507CED /* ResultViewController.swift in Sources */,

@@ -18,23 +18,7 @@ class ListTableViewCell: UITableViewCell {
     
     let saveData = UserDefaults.standard
     
-    class Movies {
-        var name: String
-        var poster: UIImage!
-        var wall: UIImage!
-        var comment: String
-        var amazon: String
-        
-        init(name: String, poster: UIImage!, wall: UIImage!, comment: String, amazon: String){
-            self.name = name
-            self.poster = poster
-            self.wall = wall
-            self.comment = comment
-            self.amazon = amazon
-        }
-    }
-    
-    var addm: [Movies] = []
+    var movie = [Movies]()
     
     @IBAction func pushTitleButton() {
         let url = URL(string:amazon)
@@ -51,14 +35,14 @@ class ListTableViewCell: UITableViewCell {
     }
     
     @IBAction func saveMovie(){
-        let temp = Movies(name: title.currentTitle!, poster: poster.currentBackgroundImage!, wall: wall.image!, comment: comment.text!, amazon: amazon)
+        let temp = Movies(name: title.currentTitle!, poster: poster.currentBackgroundImage!, wall: wall.image!, keys: [""], comment: comment.text!, amazon: amazon)
     
-        addm.append(temp)
-        saveData.set(addm, forKey: "MOVIE")
-        
+        movie.append(temp)
+        let encodedData = NSKeyedArchiver.archivedData(withRootObject: movie)
+        UserDefaults.standard.set(encodedData, forKey: "movie")
         let alert = UIAlertController(title: "保存完了", message: "登録が完了しました", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
+        self.present(alert, animated: true, completion: nil)
     }
 
     override func awakeFromNib() {

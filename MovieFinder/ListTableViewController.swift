@@ -15,24 +15,6 @@ class ListTableViewController: UITableViewController {
     
     let saveData = UserDefaults.standard
     
-    class Movies {
-        var name: String
-        var poster: UIImage!
-        var wall: UIImage!
-        var keys: [String] = []
-        var comment: String
-        var amazon: String
-        
-        init(name: String, poster: UIImage!, wall: UIImage!, keys: [String], comment: String, amazon: String){
-            self.name = name
-            self.poster = poster
-            self.wall = wall
-            self.keys = keys
-            self.comment = comment
-            self.amazon = amazon
-        }
-    }
-    
     var madmax = Movies(name: "マッドマックス： 怒りのデスロード", poster: UIImage(named: "mad_max_p.jpg")!, wall: UIImage(named: "mad_max_w.jpg")!, keys: ["怒", "キレ", "ハッチャケ", "はっちゃけ", "ストレス", "眠い"], comment: "”荒野でクレイジーなひと旅を”", amazon: "http://amzn.asia/ja0SqGr")
     
     var snatch = Movies(name: "スナッチ", poster: UIImage(named: "snatch_p.jpg")!, wall: UIImage(named: "snatch_w.jpg")!, keys: ["頭"], comment: "”最後にダイヤモンドを手に入れるのは”", amazon: "http://amzn.asia/7Anj4NN")
