@@ -10,7 +10,7 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
     
-    var my: [Movies] = []
+    var my: [Movies]! = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,7 @@ class MyTableViewController: UITableViewController {
         let data = UserDefaults.standard.data(forKey: "movie")
         my = (NSKeyedUnarchiver.unarchiveObject(with: data!) as? [Movies])!
         
+        tableView.register(UINib(nibName: "MyTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,12 +44,10 @@ class MyTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MyTableViewCell
         
-        cell.poster.setBackgroundImage(my[indexPath.row].poster, for: UIControlState.normal)
         cell.title.setTitle(my[indexPath.row].name, for: UIControlState.normal)
         cell.amazon = my[indexPath.row].amazon
-        cell.wall.image = my[indexPath.row].wall
         cell.comment.text = my[indexPath.row].comment
         cell.selectionStyle = .none
         
@@ -58,7 +57,7 @@ class MyTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 280
+        return 67
     }
     
     /*

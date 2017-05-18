@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var searchTextField: UITextField!
     
+    let def = UserDefaults.standard
+    
     //テキストを次の画面に送る
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "listTableView" {
@@ -35,6 +37,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func DismissKeyboard(){
         view.endEditing(true)
+    }
+    
+    @IBAction func delete() {
+        def.removeObject(forKey: "movie")
+        def.synchronize()
+    }
+    
+    @IBAction func toMy(){
+        if let data = UserDefaults.standard.data(forKey: "movie"),
+            let my = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Movies] {
+                self.performSegue(withIdentifier: "toMyTableView", sender: nil)
+        } else {
+            return
+        }
     }
     
     override func didReceiveMemoryWarning() {

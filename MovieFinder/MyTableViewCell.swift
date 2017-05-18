@@ -1,14 +1,14 @@
 //
-//  ListTableViewCell.swift
+//  MyTableViewCell.swift
 //  MovieFinder
 //
-//  Created by KimSeunghuk on 2017/04/25.
+//  Created by KimSeunghuk on 2017/05/18.
 //  Copyright © 2017 SkrimmApps. All rights reserved.
 //
 
 import UIKit
 
-class ListTableViewCell: UITableViewCell {
+class MyTableViewCell: UITableViewCell {
     
     @IBOutlet var comment: UILabel!
     @IBOutlet var poster: UIButton!
@@ -34,22 +34,6 @@ class ListTableViewCell: UITableViewCell {
         }
     }
     
-    @IBAction func saveMovie(){
-        let temp = Movies(name: title.currentTitle!, poster: poster.currentBackgroundImage!, wall: wall.image!, keys: [""], comment: comment.text!, amazon: amazon)
-        
-        if let data = UserDefaults.standard.data(forKey: "movie"),
-            let my = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Movies] {
-            for i in my {
-                if i.name == temp.name{
-                    return
-                }
-            }
-        }
-        movie.append(temp)
-        let encodedData = NSKeyedArchiver.archivedData(withRootObject: movie)
-        UserDefaults.standard.set(encodedData, forKey: "movie")
-    }
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
