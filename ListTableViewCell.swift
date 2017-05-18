@@ -18,7 +18,7 @@ class ListTableViewCell: UITableViewCell {
     
     let saveData = UserDefaults.standard
     
-    var movie = [Movies]()
+    var my = [Movies]()
     
     @IBAction func pushTitleButton() {
         let url = URL(string:amazon)
@@ -45,8 +45,9 @@ class ListTableViewCell: UITableViewCell {
                 }
             }
         }
-        movie.append(temp)
-        let encodedData = NSKeyedArchiver.archivedData(withRootObject: movie)
+        
+        my.append(temp)
+        let encodedData = NSKeyedArchiver.archivedData(withRootObject: my)
         UserDefaults.standard.set(encodedData, forKey: "movie")
     }
 
