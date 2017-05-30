@@ -11,13 +11,11 @@
 		C48C8A2A1EAB4D0700507CED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C8A291EAB4D0700507CED /* ViewController.swift */; };
 		C48C8A2D1EAB4D0700507CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A2B1EAB4D0700507CED /* Main.storyboard */; };
 		C48C8A2F1EAB4D0700507CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A2E1EAB4D0700507CED /* Assets.xcassets */; };
-		C48C8A321EAB4D0700507CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A301EAB4D0700507CED /* LaunchScreen.storyboard */; };
 		C48C8A3D1EAB4D0700507CED /* MovieFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C8A3C1EAB4D0700507CED /* MovieFinderTests.swift */; };
 		C48C8A481EAB4D0700507CED /* MovieFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C8A471EAB4D0700507CED /* MovieFinderUITests.swift */; };
 		C48C8A581EAF57E100507CED /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C8A571EAF57E100507CED /* ListTableViewController.swift */; };
 		C48C8A5F1EAF61A500507CED /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C8A5D1EAF61A500507CED /* ListTableViewCell.swift */; };
 		C48C8A601EAF61A500507CED /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A5E1EAF61A500507CED /* ListTableViewCell.xib */; };
-		C48C8A621EAF646700507CED /* iphone-151573_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A611EAF646700507CED /* iphone-151573_960_720.png */; };
 		C48C8A661EB0621300507CED /* mad_max_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A651EB0621300507CED /* mad_max_w.jpg */; };
 		C48C8A681EB0621B00507CED /* mad_max_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A671EB0621B00507CED /* mad_max_p.jpg */; };
 		C48C8A6A1EB4629000507CED /* snatch_w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8A691EB4629000507CED /* snatch_w.jpg */; };
@@ -67,7 +65,8 @@
 		C48C8AD11ECD954900507CED /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C8AD01ECD954900507CED /* MyTableViewController.swift */; };
 		C48C8AD41ECDAA3300507CED /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C8AD21ECDAA3300507CED /* MyTableViewCell.swift */; };
 		C48C8AD51ECDAA3300507CED /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AD31ECDAA3300507CED /* MyTableViewCell.xib */; };
-		C48C8AD71ECDC3CF00507CED /* IMG_0047.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AD61ECDC3CF00507CED /* IMG_0047.jpg */; };
+		C4C9537B1EDD4FC300837B5A /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9537A1EDD4FC300837B5A /* StoryboardHelper.swift */; };
+		C4C9537D1EDD5F3000837B5A /* 3.5inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C9537C1EDD5F3000837B5A /* 3.5inch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +92,6 @@
 		C48C8A291EAB4D0700507CED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C48C8A2C1EAB4D0700507CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C48C8A2E1EAB4D0700507CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C48C8A311EAB4D0700507CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C48C8A331EAB4D0700507CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C48C8A381EAB4D0700507CED /* MovieFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48C8A3C1EAB4D0700507CED /* MovieFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFinderTests.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 		C48C8A571EAF57E100507CED /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		C48C8A5D1EAF61A500507CED /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewCell.swift; path = ../ListTableViewCell.swift; sourceTree = "<group>"; };
 		C48C8A5E1EAF61A500507CED /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListTableViewCell.xib; path = ../ListTableViewCell.xib; sourceTree = "<group>"; };
-		C48C8A611EAF646700507CED /* iphone-151573_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-151573_960_720.png"; sourceTree = "<group>"; };
 		C48C8A651EB0621300507CED /* mad_max_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mad_max_w.jpg; sourceTree = "<group>"; };
 		C48C8A671EB0621B00507CED /* mad_max_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mad_max_p.jpg; sourceTree = "<group>"; };
 		C48C8A691EB4629000507CED /* snatch_w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snatch_w.jpg; sourceTree = "<group>"; };
@@ -154,7 +151,8 @@
 		C48C8AD01ECD954900507CED /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		C48C8AD21ECDAA3300507CED /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		C48C8AD31ECDAA3300507CED /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
-		C48C8AD61ECDC3CF00507CED /* IMG_0047.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0047.jpg; sourceTree = "<group>"; };
+		C4C9537A1EDD4FC300837B5A /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		C4C9537C1EDD5F3000837B5A /* 3.5inch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3.5inch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,20 +205,19 @@
 			children = (
 				C48C8A791EC2C34500507CED /* cinecaption2.27 */,
 				C48C8A271EAB4D0700507CED /* AppDelegate.swift */,
+				C4C9537C1EDD5F3000837B5A /* 3.5inch.storyboard */,
 				C48C8A291EAB4D0700507CED /* ViewController.swift */,
 				C48C8A571EAF57E100507CED /* ListTableViewController.swift */,
 				C48C8AD01ECD954900507CED /* MyTableViewController.swift */,
-				C48C8AD61ECDC3CF00507CED /* IMG_0047.jpg */,
 				C48C8ABC1ECC8B1D00507CED /* icon.png */,
 				C48C8A2B1EAB4D0700507CED /* Main.storyboard */,
-				C48C8A611EAF646700507CED /* iphone-151573_960_720.png */,
 				C48C8ACE1ECD83D500507CED /* Movies.swift */,
 				C48C8A5D1EAF61A500507CED /* ListTableViewCell.swift */,
 				C48C8A5E1EAF61A500507CED /* ListTableViewCell.xib */,
+				C4C9537A1EDD4FC300837B5A /* StoryboardHelper.swift */,
 				C48C8AD21ECDAA3300507CED /* MyTableViewCell.swift */,
 				C48C8AD31ECDAA3300507CED /* MyTableViewCell.xib */,
 				C48C8A2E1EAB4D0700507CED /* Assets.xcassets */,
-				C48C8A301EAB4D0700507CED /* LaunchScreen.storyboard */,
 				C48C8A331EAB4D0700507CED /* Info.plist */,
 				C48C8A641EB061E800507CED /* wallpapers */,
 				C48C8A631EB061DA00507CED /* posters */,
@@ -430,6 +427,7 @@
 				C48C8ACB1ECD228700507CED /* shawshank_p.jpg in Resources */,
 				C48C8AA11ECB15DA00507CED /* johnwick_w.jpg in Resources */,
 				C48C8AAF1ECC184800507CED /* identity_p.jpeg in Resources */,
+				C4C9537D1EDD5F3000837B5A /* 3.5inch.storyboard in Resources */,
 				C48C8A761EB46FB800507CED /* leon_w.jpg in Resources */,
 				C48C8AA31ECC166300507CED /* million_w.jpg in Resources */,
 				C48C8A721EB46EB900507CED /* star_wars_p.jpg in Resources */,
@@ -439,12 +437,10 @@
 				C48C8AC71ECD227100507CED /* wolfof_p.jpg in Resources */,
 				C48C8A8D1EC69B1600507CED /* social_p.jpg in Resources */,
 				C48C8AB71ECC189400507CED /* grand_w.jpg in Resources */,
-				C48C8A321EAB4D0700507CED /* LaunchScreen.storyboard in Resources */,
 				C48C8AB91ECC189E00507CED /* longest_p.jpg in Resources */,
 				C48C8AA91ECC17EE00507CED /* click_w.jpg in Resources */,
 				C48C8A6C1EB4629500507CED /* snatch_p.jpg in Resources */,
 				C48C8AC51ECD226500507CED /* deadpool_w.jpg in Resources */,
-				C48C8A621EAF646700507CED /* iphone-151573_960_720.png in Resources */,
 				C48C8A811EC46C4800507CED /* django_w.jpg in Resources */,
 				C48C8ABD1ECC8B1D00507CED /* icon.png in Resources */,
 				C48C8A7C1EC2C34500507CED /* cinecaption2.27.txt in Resources */,
@@ -455,7 +451,6 @@
 				C48C8A831EC46C5500507CED /* who_p.jpg in Resources */,
 				C48C8A9B1ECB0F0C00507CED /* drive_p.jpg in Resources */,
 				C48C8AC91ECD227D00507CED /* wolfof_w.jpg in Resources */,
-				C48C8AD71ECDC3CF00507CED /* IMG_0047.jpg in Resources */,
 				C48C8AA51ECC167000507CED /* million_p.jpg in Resources */,
 				C48C8AC31ECD225900507CED /* deadpool_p.jpg in Resources */,
 				C48C8A741EB46ED400507CED /* star_wars_w.jpg in Resources */,
@@ -499,6 +494,7 @@
 			files = (
 				C48C8AD41ECDAA3300507CED /* MyTableViewCell.swift in Sources */,
 				C48C8A581EAF57E100507CED /* ListTableViewController.swift in Sources */,
+				C4C9537B1EDD4FC300837B5A /* StoryboardHelper.swift in Sources */,
 				C48C8AD11ECD954900507CED /* MyTableViewController.swift in Sources */,
 				C48C8ACF1ECD83D500507CED /* Movies.swift in Sources */,
 				C48C8A2A1EAB4D0700507CED /* ViewController.swift in Sources */,
@@ -545,14 +541,6 @@
 				C48C8A2C1EAB4D0700507CED /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C48C8A301EAB4D0700507CED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C48C8A311EAB4D0700507CED /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

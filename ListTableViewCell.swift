@@ -39,6 +39,7 @@ class ListTableViewCell: UITableViewCell {
         
         if let data = UserDefaults.standard.data(forKey: "movie"),
             let my = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Movies] {
+            self.my = my
             for i in my {
                 if i.name == temp.name{
                     return
