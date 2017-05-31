@@ -67,6 +67,9 @@
 		C48C8AD51ECDAA3300507CED /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48C8AD31ECDAA3300507CED /* MyTableViewCell.xib */; };
 		C4C9537B1EDD4FC300837B5A /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9537A1EDD4FC300837B5A /* StoryboardHelper.swift */; };
 		C4C9537D1EDD5F3000837B5A /* 3.5inch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C9537C1EDD5F3000837B5A /* 3.5inch.storyboard */; };
+		C4C953821EDE760200837B5A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C9537F1EDE760200837B5A /* Default-568h@2x.png */; };
+		C4C953831EDE760200837B5A /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C953801EDE760200837B5A /* Default-667h@2x.png */; };
+		C4C953841EDE760200837B5A /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C953811EDE760200837B5A /* Default-736h@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +156,9 @@
 		C48C8AD31ECDAA3300507CED /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		C4C9537A1EDD4FC300837B5A /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
 		C4C9537C1EDD5F3000837B5A /* 3.5inch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3.5inch.storyboard; sourceTree = "<group>"; };
+		C4C9537F1EDE760200837B5A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C4C953801EDE760200837B5A /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		C4C953811EDE760200837B5A /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,7 @@
 				C48C8A271EAB4D0700507CED /* AppDelegate.swift */,
 				C4C9537C1EDD5F3000837B5A /* 3.5inch.storyboard */,
 				C48C8A291EAB4D0700507CED /* ViewController.swift */,
+				C4C9537E1EDE760200837B5A /* Defaults */,
 				C48C8A571EAF57E100507CED /* ListTableViewController.swift */,
 				C48C8AD01ECD954900507CED /* MyTableViewController.swift */,
 				C48C8ABC1ECC8B1D00507CED /* icon.png */,
@@ -306,6 +313,16 @@
 				C48C8A7B1EC2C34500507CED /* cinecaption227.TTF */,
 			);
 			path = cinecaption2.27;
+			sourceTree = "<group>";
+		};
+		C4C9537E1EDE760200837B5A /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				C4C9537F1EDE760200837B5A /* Default-568h@2x.png */,
+				C4C953801EDE760200837B5A /* Default-667h@2x.png */,
+				C4C953811EDE760200837B5A /* Default-736h@3x.png */,
+			);
+			path = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +443,7 @@
 				C48C8A7D1EC2C34500507CED /* cinecaption227.TTF in Resources */,
 				C48C8ACB1ECD228700507CED /* shawshank_p.jpg in Resources */,
 				C48C8AA11ECB15DA00507CED /* johnwick_w.jpg in Resources */,
+				C4C953821EDE760200837B5A /* Default-568h@2x.png in Resources */,
 				C48C8AAF1ECC184800507CED /* identity_p.jpeg in Resources */,
 				C4C9537D1EDD5F3000837B5A /* 3.5inch.storyboard in Resources */,
 				C48C8A761EB46FB800507CED /* leon_w.jpg in Resources */,
@@ -458,6 +476,8 @@
 				C48C8ABF1ECD223C00507CED /* fightclub_p.jpg in Resources */,
 				C48C8AAD1ECC183C00507CED /* greenmile_w.jpg in Resources */,
 				C48C8AAB1ECC182F00507CED /* greenmile_p.jpg in Resources */,
+				C4C953841EDE760200837B5A /* Default-736h@3x.png in Resources */,
+				C4C953831EDE760200837B5A /* Default-667h@2x.png in Resources */,
 				C48C8A661EB0621300507CED /* mad_max_w.jpg in Resources */,
 				C48C8A601EAF61A500507CED /* ListTableViewCell.xib in Resources */,
 				C48C8A891EC46C7300507CED /* kingsman_w.jpg in Resources */,
